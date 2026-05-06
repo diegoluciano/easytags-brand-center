@@ -525,6 +525,7 @@ h3 { font-size: 1rem; }
 
 .icon-variants {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
@@ -638,6 +639,10 @@ h3 { font-size: 1rem; }
   .board--tech,
   .board--apps,
   .benefits-row {
+    grid-template-columns: 1fr;
+  }
+
+  .icon-variants {
     grid-template-columns: 1fr;
   }
 }
