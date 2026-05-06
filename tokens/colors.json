@@ -1,0 +1,17 @@
+{
+  "brand": {
+    "green": "#74C63E",
+    "charcoal": "#2E2E2E",
+    "white": "#FFFFFF"
+  },
+  "semantic": {
+    "background": "#F4F7F2",
+    "surface": "#FFFFFF",
+    "text": "#2E2E2E",
+    "accent": "#74C63E"
+  },
+  "typography": {
+    "base": "Inter",
+    "condensed": "Oswald"
+  }
+}
