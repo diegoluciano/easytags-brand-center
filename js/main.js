@@ -3,6 +3,9 @@
   initMobileMenu();
 
   const galleryGrid = document.getElementById("gallery-grid");
+  const modal = document.getElementById("gallery-modal");
+  const modalImage = document.getElementById("gallery-modal-image");
+  const modalClose = document.getElementById("gallery-modal-close");
   if (!galleryGrid) return;
 
   const entries = [
@@ -13,6 +16,7 @@
   ];
 
   renderGallery(galleryGrid, entries);
+  initGalleryModal();
 
   function renderGallery(container, items) {
     container.innerHTML = "";
@@ -20,6 +24,7 @@
     items.forEach((item) => {
       const card = document.createElement("article");
       card.className = "asset-card mazory-item";
+      card.tabIndex = 0;
 
       const image = document.createElement("img");
       image.src = item.file;
@@ -32,9 +37,50 @@
       const title = document.createElement("h3");
       title.textContent = item.title;
 
+      card.addEventListener("click", () => openModal(item.file, item.title));
+      card.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openModal(item.file, item.title);
+        }
+      });
+
       card.append(image, title);
       container.appendChild(card);
     });
+  }
+
+  function initGalleryModal() {
+    if (!modal || !modalImage || !modalClose) return;
+
+    modalClose.addEventListener("click", closeModal);
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) closeModal();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && modal.classList.contains("is-open")) {
+        closeModal();
+      }
+    });
+  }
+
+  function openModal(src, alt) {
+    if (!modal || !modalImage) return;
+    modalImage.src = src;
+    modalImage.alt = alt;
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    if (!modal || !modalImage) return;
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    modalImage.src = "";
+    modalImage.alt = "";
+    document.body.style.overflow = "";
   }
 
   function initMobileMenu() {
