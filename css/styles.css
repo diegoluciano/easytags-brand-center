@@ -875,10 +875,24 @@ h3 { font-size: 1rem; }
   padding-left: 1rem;
 }
 
+.benefit-head {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.35rem;
+}
+
+.benefit-icon {
+  width: 20px;
+  height: 20px;
+  color: #74c63e;
+  flex: 0 0 auto;
+}
+
 .benefits-row strong {
   color: #74c63e;
   display: block;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0;
 }
 
 .benefits-row p {
