@@ -27,14 +27,19 @@
 
   <nav class="topnav" aria-label="Navegação principal">
     <div class="container topnav__inner">
-      <a href="#identidade">Identidade</a>
-      <a href="#tecnico">Módulos técnicos</a>
-      <a href="#tipografia">Tipografia</a>
-      <a href="#aplicacoes">Aplicações</a>
-      <a href="#beneficios">Benefícios</a>
-      <a href="#loading">Loading</a>
-      <a href="#galeria">Mockups + Instagram</a>
-      <a href="#downloads">Downloads</a>
+      <button class="topnav__toggle" id="menu-toggle" aria-expanded="false" aria-controls="topnav-links" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="topnav__links" id="topnav-links">
+        <a href="#identidade">Identidade</a>
+        <a href="#tecnico">Módulos técnicos</a>
+        <a href="#tipografia">Tipografia</a>
+        <a href="#aplicacoes">Aplicações</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#loading">Loading</a>
+        <a href="#galeria">Mockups + Instagram</a>
+        <a href="#downloads">Downloads</a>
+      </div>
     </div>
   </nav>
 
@@ -137,11 +142,11 @@
               .logo-group { transform-origin: 91.81px 91.81px; animation: logoBreath var(--duration) ease-in-out infinite; }
               .green-circle { transform-origin: 91.81px 91.81px; opacity: 0; animation: circleIntro var(--duration) ease-in-out infinite; }
               .symbol-dark { transform-origin: 91.81px 91.81px; opacity: 0; animation: symbolIntro var(--duration) ease-in-out infinite; }
-              .pulse-ring { transform-origin: 91.81px 91.81px; fill: none; stroke: var(--green); stroke-width: 6; opacity: 0; animation: ringPulse var(--duration) ease-out infinite; }
-              @keyframes circleIntro { 0% { opacity: 0; transform: scale(.45);} 18% {opacity:1; transform:scale(1.04);} 28%,100% {opacity:1; transform:scale(1);} }
-              @keyframes symbolIntro { 0%,18% {opacity:0; transform:scale(.92);} 30%,100% {opacity:1; transform:scale(1);} }
-              @keyframes ringPulse { 0%,34% {opacity:0; transform:scale(1);} 42% {opacity:.22; transform:scale(1);} 68% {opacity:0; transform:scale(1.16);} 69%,74% {opacity:0; transform:scale(1);} 80% {opacity:.16; transform:scale(1);} 100% {opacity:0; transform:scale(1.16);} }
-              @keyframes logoBreath { 0%,34% {transform:scale(1);} 46% {transform:scale(1.01);} 58% {transform:scale(1);} 82% {transform:scale(1.008);} 100% {transform:scale(1);} }
+              .pulse-ring { transform-origin: 91.81px 91.81px; fill: none; stroke: var(--green); stroke-width: 8; opacity: 0; animation: ringPulse var(--duration) ease-out infinite; }
+              @keyframes circleIntro { 0% { opacity: 0; transform: scale(.4);} 18% {opacity:1; transform:scale(1.08);} 28%,100% {opacity:1; transform:scale(1);} }
+              @keyframes symbolIntro { 0%,18% {opacity:0; transform:scale(.88);} 30%,100% {opacity:1; transform:scale(1);} }
+              @keyframes ringPulse { 0%,30% {opacity:0; transform:scale(1);} 38% {opacity:.34; transform:scale(1);} 68% {opacity:0; transform:scale(1.24);} 69%,74% {opacity:0; transform:scale(1);} 78% {opacity:.26; transform:scale(1);} 100% {opacity:0; transform:scale(1.24);} }
+              @keyframes logoBreath { 0%,30% {transform:scale(1);} 44% {transform:scale(1.03);} 58% {transform:scale(1);} 80% {transform:scale(1.02);} 100% {transform:scale(1);} }
             </style>
             <circle class="pulse-ring" cx="91.81" cy="91.81" r="91.81" />
             <g class="logo-group">

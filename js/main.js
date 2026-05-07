@@ -1,5 +1,7 @@
 /* Build unified gallery with two featured images. */
 (function initBrandCenter() {
+  initMobileMenu();
+
   const galleryGrid = document.getElementById("gallery-grid");
   if (!galleryGrid) return;
 
@@ -30,6 +32,24 @@
 
       card.append(image, title);
       container.appendChild(card);
+    });
+  }
+
+  function initMobileMenu() {
+    const toggle = document.getElementById("menu-toggle");
+    const links = document.getElementById("topnav-links");
+    if (!toggle || !links) return;
+
+    toggle.addEventListener("click", () => {
+      const isOpen = links.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    links.querySelectorAll("a").forEach((anchor) => {
+      anchor.addEventListener("click", () => {
+        links.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
     });
   }
 })();
