@@ -1,13 +1,88 @@
 /* EasyTags design tokens (CSS) */
 :root {
-  --color-green: #74c63e;
+  --color-green: #4eba2b;
   --color-charcoal: #2e2e2e;
   --color-white: #ffffff;
+  --color-gray-alt: #f2f2f2;
 
-  --color-bg: #f4f7f2;
+  --color-bg: #f2f2f2;
   --color-surface: #ffffff;
   --color-text: #2e2e2e;
 
   --font-base: "Inter", sans-serif;
   --font-condensed: "Oswald", sans-serif;
+
+  /* Bootstrap-like theme colors */
+  --theme-primary: #4eba2b;
+  --theme-secondary: #4c5353;
+  --theme-success: #2f9e44;
+  --theme-danger: #d64545;
+  --theme-warning: #e8a11c;
+  --theme-info: #1f8bff;
+
+  /* Primary scale */
+  --theme-primary-100: #edf8e8;
+  --theme-primary-200: #d2eebf;
+  --theme-primary-300: #b7e496;
+  --theme-primary-400: #82cf50;
+  --theme-primary-500: #4eba2b;
+  --theme-primary-600: #419d24;
+  --theme-primary-700: #347f1d;
+  --theme-primary-800: #276116;
+  --theme-primary-900: #1a420f;
+
+  /* Secondary scale */
+  --theme-secondary-100: #f1f3f3;
+  --theme-secondary-200: #e4e8e8;
+  --theme-secondary-300: #cbd2d2;
+  --theme-secondary-400: #9ca7a7;
+  --theme-secondary-500: #4c5353;
+  --theme-secondary-600: #3f4545;
+  --theme-secondary-700: #323737;
+  --theme-secondary-800: #252a2a;
+  --theme-secondary-900: #181c1c;
+
+  /* Success scale */
+  --theme-success-100: #eaf7ee;
+  --theme-success-200: #c7ebd2;
+  --theme-success-300: #a3dfb6;
+  --theme-success-400: #69c882;
+  --theme-success-500: #2f9e44;
+  --theme-success-600: #27863a;
+  --theme-success-700: #206e2f;
+  --theme-success-800: #185624;
+  --theme-success-900: #103e1a;
+
+  /* Danger scale */
+  --theme-danger-100: #fbecec;
+  --theme-danger-200: #f5caca;
+  --theme-danger-300: #eea8a8;
+  --theme-danger-400: #e46e6e;
+  --theme-danger-500: #d64545;
+  --theme-danger-600: #b73a3a;
+  --theme-danger-700: #982f2f;
+  --theme-danger-800: #792525;
+  --theme-danger-900: #5a1a1a;
+
+  /* Warning scale */
+  --theme-warning-100: #fff5e5;
+  --theme-warning-200: #ffe6b8;
+  --theme-warning-300: #ffd68a;
+  --theme-warning-400: #f2bc4b;
+  --theme-warning-500: #e8a11c;
+  --theme-warning-600: #c48717;
+  --theme-warning-700: #9f6d13;
+  --theme-warning-800: #7a530e;
+  --theme-warning-900: #56380a;
+
+  /* Info scale */
+  --theme-info-100: #eaf4ff;
+  --theme-info-200: #c9e2ff;
+  --theme-info-300: #a7d0ff;
+  --theme-info-400: #67aeff;
+  --theme-info-500: #1f8bff;
+  --theme-info-600: #1a76d9;
+  --theme-info-700: #1561b3;
+  --theme-info-800: #104c8c;
+  --theme-info-900: #0b3766;
 }

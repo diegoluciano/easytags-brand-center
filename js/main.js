@@ -1,4 +1,4 @@
-/* Build unified gallery with two featured images. */
+/* Build unified gallery with featured mockups and social images. */
 (function initBrandCenter() {
   initMobileMenu();
 
@@ -7,7 +7,9 @@
 
   const entries = [
     { file: "assets/mockups/reference-01.png", title: "Mockup editorial 01", source: "mockups" },
-    { file: "assets/mockups/reference-02.png", title: "Mockup editorial 02", source: "mockups" }
+    { file: "assets/mockups/reference-02.png", title: "Mockup editorial 02", source: "mockups" },
+    { file: "assets/mockups/mockup-new-01.png", title: "Mockup editorial 03", source: "mockups" },
+    { file: "assets/mockups/mockup-new-02.png", title: "Mockup editorial 04", source: "mockups" }
   ];
 
   renderGallery(galleryGrid, entries);

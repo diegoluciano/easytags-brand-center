@@ -10,9 +10,11 @@ A EasyTags representa eficiência operacional para supermercados, com foco em at
 - Não distorcer, rotacionar ou aplicar efeitos sobre o símbolo.
 
 ## 3. Cores oficiais
-- Verde primário: `#74C63E`
+- Verde primário: `#4EBA2B`
 - Carvão escuro: `#2E2E2E`
 - Branco: `#FFFFFF`
+- Cinza alternativo (apoio): `#F2F2F2`
+- Pantone aproximado do verde: `PMS 368 C`
 
 ## 4. Tipografia
 - **Inter**: textos de interface, corpo e documentação.
@@ -23,6 +25,8 @@ A EasyTags representa eficiência operacional para supermercados, com foco em at
 - Materiais de onboarding comercial.
 - Campanhas de Instagram (feed e stories).
 - Interfaces do app de gestão de preços.
+- Versões verticais para assinaturas compactas e aplicações de coluna.
+- Ícone quadrado com cantos arredondados para app e favicon.
 
 ## 6. Motion e loading
 A animação de loading deve sugerir atualização contínua, rapidez e confiabilidade.

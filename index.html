@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/svg+xml" href="assets/logo/icon_app_grafite.svg" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo/icon_app.svg" />
   <link rel="stylesheet" href="tokens/colors.css" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -33,6 +33,7 @@
       <div class="topnav__links" id="topnav-links">
         <a href="#identidade">Identidade</a>
         <a href="#tecnico">Módulos técnicos</a>
+        <a href="#tema">Cores de tema</a>
         <a href="#tipografia">Tipografia</a>
         <a href="#aplicacoes">Aplicações</a>
         <a href="#beneficios">Benefícios</a>
@@ -57,24 +58,142 @@
         <article class="board-card board-card--plain">
           <h2>Paleta de cores</h2>
           <div class="palette-inline">
-            <div><span style="background:#74C63E"></span><p>#74C63E</p></div>
+            <div><span style="background:#4EBA2B"></span><p>#4EBA2B</p></div>
             <div><span style="background:#2E2E2E"></span><p>#2E2E2E</p></div>
             <div><span style="background:#FFFFFF;border:1px solid #d8d8d8"></span><p>#FFFFFF</p></div>
+            <div><span style="background:#F2F2F2;border:1px solid #d8d8d8"></span><p>#F2F2F2</p></div>
           </div>
+          <p class="palette-note">Pantone aproximado do verde da marca: <strong>PMS 368 C</strong>.</p>
         </article>
         <article class="board-card board-card--plain">
           <h2>Ícones</h2>
           <div class="icon-variants">
             <div class="icon-variant">
               <h3>App e favicon</h3>
-              <div class="icon-stage icon-stage--left"><img src="assets/logo/icon_app_grafite.svg" alt="Ícone app e favicon quadrado" /></div>
+              <div class="icon-stage icon-stage--left"><img src="assets/logo/icon_app.svg" alt="Ícone app e favicon quadrado" /></div>
             </div>
             <div class="icon-variant">
               <h3>Avatares</h3>
-              <div class="icon-stage icon-stage--left"><img src="assets/logo/logo_isolado_IG_grafite.svg" alt="Avatar circular para redes sociais" /></div>
+              <div class="icon-stage icon-stage--left"><img src="assets/logo/logo_isolado_IG.svg" alt="Avatar circular para redes sociais" /></div>
             </div>
           </div>
         </article>
+      </div>
+    </section>
+
+    <section id="tema" class="section">
+      <div class="container">
+        <h2>Cores de tema do sistema</h2>
+        <p class="intro">Escala semântica no padrão de design systems (estilo Bootstrap): <strong>primary</strong>, <strong>secondary</strong>, <strong>success</strong>, <strong>danger</strong>, <strong>warning</strong> e <strong>info</strong>.</p>
+        <div class="theme-grid">
+          <article class="theme-card">
+            <div class="theme-card__head">
+              <h3>Primary</h3>
+              <span>#4EBA2B</span>
+            </div>
+            <div class="scale-row">
+              <div class="scale-chip" style="background:#EDF8E8">100</div>
+              <div class="scale-chip" style="background:#D2EEBF">200</div>
+              <div class="scale-chip" style="background:#B7E496">300</div>
+              <div class="scale-chip" style="background:#82CF50">400</div>
+              <div class="scale-chip scale-chip--dark" style="background:#4EBA2B">500</div>
+              <div class="scale-chip scale-chip--dark" style="background:#419D24">600</div>
+              <div class="scale-chip scale-chip--dark" style="background:#347F1D">700</div>
+              <div class="scale-chip scale-chip--dark" style="background:#276116">800</div>
+              <div class="scale-chip scale-chip--dark" style="background:#1A420F">900</div>
+            </div>
+          </article>
+
+          <article class="theme-card">
+            <div class="theme-card__head">
+              <h3>Secondary</h3>
+              <span>#4C5353</span>
+            </div>
+            <div class="scale-row">
+              <div class="scale-chip" style="background:#F1F3F3">100</div>
+              <div class="scale-chip" style="background:#E4E8E8">200</div>
+              <div class="scale-chip" style="background:#CBD2D2">300</div>
+              <div class="scale-chip" style="background:#9CA7A7">400</div>
+              <div class="scale-chip scale-chip--dark" style="background:#4C5353">500</div>
+              <div class="scale-chip scale-chip--dark" style="background:#3F4545">600</div>
+              <div class="scale-chip scale-chip--dark" style="background:#323737">700</div>
+              <div class="scale-chip scale-chip--dark" style="background:#252A2A">800</div>
+              <div class="scale-chip scale-chip--dark" style="background:#181C1C">900</div>
+            </div>
+          </article>
+
+          <article class="theme-card">
+            <div class="theme-card__head">
+              <h3>Success</h3>
+              <span>#2F9E44</span>
+            </div>
+            <div class="scale-row">
+              <div class="scale-chip" style="background:#EAF7EE">100</div>
+              <div class="scale-chip" style="background:#C7EBD2">200</div>
+              <div class="scale-chip" style="background:#A3DFB6">300</div>
+              <div class="scale-chip" style="background:#69C882">400</div>
+              <div class="scale-chip scale-chip--dark" style="background:#2F9E44">500</div>
+              <div class="scale-chip scale-chip--dark" style="background:#27863A">600</div>
+              <div class="scale-chip scale-chip--dark" style="background:#206E2F">700</div>
+              <div class="scale-chip scale-chip--dark" style="background:#185624">800</div>
+              <div class="scale-chip scale-chip--dark" style="background:#103E1A">900</div>
+            </div>
+          </article>
+
+          <article class="theme-card">
+            <div class="theme-card__head">
+              <h3>Danger</h3>
+              <span>#D64545</span>
+            </div>
+            <div class="scale-row">
+              <div class="scale-chip" style="background:#FBECEC">100</div>
+              <div class="scale-chip" style="background:#F5CACA">200</div>
+              <div class="scale-chip" style="background:#EEA8A8">300</div>
+              <div class="scale-chip" style="background:#E46E6E">400</div>
+              <div class="scale-chip scale-chip--dark" style="background:#D64545">500</div>
+              <div class="scale-chip scale-chip--dark" style="background:#B73A3A">600</div>
+              <div class="scale-chip scale-chip--dark" style="background:#982F2F">700</div>
+              <div class="scale-chip scale-chip--dark" style="background:#792525">800</div>
+              <div class="scale-chip scale-chip--dark" style="background:#5A1A1A">900</div>
+            </div>
+          </article>
+
+          <article class="theme-card">
+            <div class="theme-card__head">
+              <h3>Warning</h3>
+              <span>#E8A11C</span>
+            </div>
+            <div class="scale-row">
+              <div class="scale-chip" style="background:#FFF5E5">100</div>
+              <div class="scale-chip" style="background:#FFE6B8">200</div>
+              <div class="scale-chip" style="background:#FFD68A">300</div>
+              <div class="scale-chip" style="background:#F2BC4B">400</div>
+              <div class="scale-chip scale-chip--dark" style="background:#E8A11C">500</div>
+              <div class="scale-chip scale-chip--dark" style="background:#C48717">600</div>
+              <div class="scale-chip scale-chip--dark" style="background:#9F6D13">700</div>
+              <div class="scale-chip scale-chip--dark" style="background:#7A530E">800</div>
+              <div class="scale-chip scale-chip--dark" style="background:#56380A">900</div>
+            </div>
+          </article>
+
+          <article class="theme-card">
+            <div class="theme-card__head">
+              <h3>Info</h3>
+              <span>#1F8BFF</span>
+            </div>
+            <div class="scale-row">
+              <div class="scale-chip" style="background:#EAF4FF">100</div>
+              <div class="scale-chip" style="background:#C9E2FF">200</div>
+              <div class="scale-chip" style="background:#A7D0FF">300</div>
+              <div class="scale-chip" style="background:#67AEFF">400</div>
+              <div class="scale-chip scale-chip--dark" style="background:#1F8BFF">500</div>
+              <div class="scale-chip scale-chip--dark" style="background:#1A76D9">600</div>
+              <div class="scale-chip scale-chip--dark" style="background:#1561B3">700</div>
+              <div class="scale-chip scale-chip--dark" style="background:#104C8C">800</div>
+              <div class="scale-chip scale-chip--dark" style="background:#0B3766">900</div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -114,7 +233,7 @@
         </article>
         <article class="board-card app-card app-card--vertical">
           <h2>Vertical em fundo claro</h2>
-          <div class="app-logo-wrap"><img class="logo-asset logo-asset--vertical" src="assets/logo/logo_verticalizado.svg" alt="Logo vertical fundo claro" /></div>
+          <div class="app-logo-wrap"><img class="logo-asset logo-asset--vertical logo-asset--vertical-light" src="assets/logo/logo_verticalizado.svg" alt="Logo vertical fundo claro" /></div>
         </article>
         <article class="board-card app-card app-card--dark app-card--vertical">
           <h2>Vertical em fundo escuro</h2>
@@ -138,7 +257,7 @@
         <div class="loading-showcase">
           <svg width="260" height="260" viewBox="-20 -20 224 224" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="EasyTags loading">
             <style>
-              :root { --green: #74C63E; --duration: 3.2s; }
+              :root { --green: #4EBA2B; --duration: 3.2s; }
               .logo-group { transform-origin: 91.81px 91.81px; animation: logoBreath var(--duration) ease-in-out infinite; }
               .green-circle { transform-origin: 91.81px 91.81px; opacity: 0; animation: circleIntro var(--duration) ease-in-out infinite; }
               .symbol-dark { transform-origin: 91.81px 91.81px; opacity: 0; animation: symbolIntro var(--duration) ease-in-out infinite; }
@@ -150,8 +269,8 @@
             </style>
             <circle class="pulse-ring" cx="91.81" cy="91.81" r="91.81" />
             <g class="logo-group">
-              <circle class="green-circle" cx="91.81" cy="91.81" r="91.81" fill="#74C63E" />
-              <path class="symbol-dark" fill="#2E2E2E" d="M114.08,48.92H47.06c-1.23,0-2.23,1-2.23,2.23v11.7c0,1.23,1,2.23,2.23,2.23h62.03c1.84,0,2.89,2.1,1.78,3.57l-7.83,10.38c-.42.56-1.08.89-1.78.89h-54.2c-1.23,0-2.23,1-2.23,2.23h0c0,1.23,1,2.23,2.23,2.23h32.36c1.84,0,2.89,2.1,1.78,3.57l-7.83,10.38c-.42.56-1.08.89-1.78.89h-24.53c-1.23,0-2.23,1-2.23,2.23h0c0,1.23,1,2.23,2.23,2.23h49.99c1.84,0,2.89,2.1,1.78,3.57l-7.83,10.38c-.42.56-1.08.89-1.78.89h-42.16c-1.23,0-2.23,1-2.23,2.23v11.7c0,1.23,1,2.23,2.23,2.23h66.66c3.82,0,7.47-1.58,10.1-4.36l10.76-11.42c2.7-2.86,4.2-6.65,4.2-10.58v-34.34c0-4.16-1.68-8.15-4.66-11.05l-10.36-10.09c-2.59-2.52-6.06-3.94-9.68-3.94Z" />
+              <circle class="green-circle" cx="91.81" cy="91.81" r="91.81" fill="#4EBA2B" />
+              <path class="symbol-dark" fill="#FFFFFF" d="M114.08,48.92H47.06c-1.23,0-2.23,1-2.23,2.23v11.7c0,1.23,1,2.23,2.23,2.23h62.03c1.84,0,2.89,2.1,1.78,3.57l-7.83,10.38c-.42.56-1.08.89-1.78.89h-54.2c-1.23,0-2.23,1-2.23,2.23h0c0,1.23,1,2.23,2.23,2.23h32.36c1.84,0,2.89,2.1,1.78,3.57l-7.83,10.38c-.42.56-1.08.89-1.78.89h-24.53c-1.23,0-2.23,1-2.23,2.23h0c0,1.23,1,2.23,2.23,2.23h49.99c1.84,0,2.89,2.1,1.78,3.57l-7.83,10.38c-.42.56-1.08.89-1.78.89h-42.16c-1.23,0-2.23,1-2.23,2.23v11.7c0,1.23,1,2.23,2.23,2.23h66.66c3.82,0,7.47-1.58,10.1-4.36l10.76-11.42c2.7-2.86,4.2-6.65,4.2-10.58v-34.34c0-4.16-1.68-8.15-4.66-11.05l-10.36-10.09c-2.59-2.52-6.06-3.94-9.68-3.94Z" />
             </g>
           </svg>
           <p>Movimento base para sincronização do ecossistema EasyTags.</p>
@@ -172,20 +291,32 @@
         <div class="download-grid">
           <article class="download-card">
             <h3>Logos SVG</h3>
-            <a class="btn" href="assets/logo/logo_completo.svg" download>Logo completo</a>
-            <a class="btn" href="assets/logo/logo_fundo_escuro.svg" download>Fundo escuro</a>
-            <a class="btn" href="assets/logo/logo_verticalizado.svg" download>Vertical claro</a>
-            <a class="btn" href="assets/logo/logo_verticalizado_invertido.svg" download>Vertical escuro</a>
-            <a class="btn" href="assets/logo/logo_isolado_monocromatico.svg" download>Isolado monocromático</a>
-            <a class="btn" href="assets/logo/logo_isolado_IG.svg" download>Isolado IG (branco)</a>
-            <a class="btn" href="assets/logo/logo_isolado_IG_grafite.svg" download>Isolado IG (grafite)</a>
-            <a class="btn" href="assets/logo/icon_app_grafite.svg" download>Ícone app / favicon</a>
+            <div class="download-links">
+              <a class="btn btn--file" href="assets/logo/logo_completo.svg" download><span class="file-dot" style="background-image:url('png/logo_completo@2x.png')"></span>Logo completo SVG</a>
+              <a class="btn btn--file" href="assets/logo/logo_fundo_escuro.svg" download><span class="file-dot" style="background-image:url('png/logo_fundo_escuro@2x.png')"></span>Fundo escuro SVG</a>
+              <a class="btn btn--file" href="assets/logo/logo_verticalizado.svg" download><span class="file-dot" style="background-image:url('png/logo_verticalizado@2x.png')"></span>Vertical claro SVG</a>
+              <a class="btn btn--file" href="assets/logo/logo_verticalizado_invertido.svg" download><span class="file-dot" style="background-image:url('png/logo_verticalizado_invertido@2x.png')"></span>Vertical escuro SVG</a>
+              <a class="btn btn--file" href="assets/logo/logo_isolado_monocromatico.svg" download><span class="file-dot" style="background-image:url('png/logo_isolado_invertido@2x.png')"></span>Isolado monocromático SVG</a>
+              <a class="btn btn--file" href="assets/logo/logo_isolado_IG.svg" download><span class="file-dot" style="background-image:url('png/logo_isolado_IG@2x.png')"></span>Isolado IG SVG</a>
+              <a class="btn btn--file" href="assets/logo/icon_app.svg" download><span class="file-dot" style="background-image:url('png/ícone_app@2x.png')"></span>Ícone app / favicon SVG</a>
+            </div>
+            <h3>Logos PNG @2x</h3>
+            <div class="download-links">
+              <a class="btn btn--file" href="png/logo_completo@2x.png" download><span class="file-dot" style="background-image:url('png/logo_completo@2x.png')"></span>Logo completo PNG</a>
+              <a class="btn btn--file" href="png/logo_fundo_escuro@2x.png" download><span class="file-dot" style="background-image:url('png/logo_fundo_escuro@2x.png')"></span>Fundo escuro PNG</a>
+              <a class="btn btn--file" href="png/logo_verticalizado@2x.png" download><span class="file-dot" style="background-image:url('png/logo_verticalizado@2x.png')"></span>Vertical claro PNG</a>
+              <a class="btn btn--file" href="png/logo_verticalizado_invertido@2x.png" download><span class="file-dot" style="background-image:url('png/logo_verticalizado_invertido@2x.png')"></span>Vertical escuro PNG</a>
+              <a class="btn btn--file" href="png/logo_isolado_IG@2x.png" download><span class="file-dot" style="background-image:url('png/logo_isolado_IG@2x.png')"></span>Isolado IG PNG</a>
+              <a class="btn btn--file" href="png/logo_isolado_invertido@2x.png" download><span class="file-dot" style="background-image:url('png/logo_isolado_invertido@2x.png')"></span>Isolado invertido PNG</a>
+              <a class="btn btn--file" href="png/ícone_app@2x.png" download><span class="file-dot" style="background-image:url('png/ícone_app@2x.png')"></span>Ícone app PNG</a>
+            </div>
           </article>
           <article class="download-card">
             <h3>Tokens</h3>
-            <a class="btn" href="tokens/colors.css" download>Download CSS</a>
-            <a class="btn" href="tokens/colors.json" download>Download JSON</a>
-            <a class="btn btn--primary" href="#" aria-disabled="true">Pacote completo (em breve)</a>
+            <div class="download-links">
+              <a class="btn btn--file" href="tokens/colors.css" download><span class="file-dot file-dot--token">CSS</span>Download CSS</a>
+              <a class="btn btn--file" href="tokens/colors.json" download><span class="file-dot file-dot--token">JSON</span>Download JSON</a>
+            </div>
           </article>
         </div>
       </div>
