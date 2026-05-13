@@ -517,24 +517,41 @@ h3 { font-size: 1rem; }
   cursor: pointer;
 }
 
-.download-card {
-  padding: 1rem;
-}
-
 .download-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 0;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0;
 }
 
-.download-card h3 {
-  margin: 0 0 0.35rem;
+.download-fieldset-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.35rem;
 }
 
-.download-card .download-links + h3 {
-  margin-top: 0.5rem;
+.download-fieldset {
+  border: 1px solid rgba(46, 46, 46, 0.12);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin: 0;
+  min-width: 0;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.download-fieldset legend {
+  font-family: var(--font-condensed, "Oswald", sans-serif);
+  font-size: 0.95rem;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  padding: 0 0.25rem;
+  font-weight: 400;
+  color: rgba(46, 46, 46, 0.88);
+}
+
+.download-fieldset .download-links {
+  margin-top: 0.35rem;
 }
 
 .btn {
@@ -683,6 +700,10 @@ h3 { font-size: 1rem; }
   .footer__inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .download-fieldset-grid {
+    grid-template-columns: 1fr;
   }
 }
 
